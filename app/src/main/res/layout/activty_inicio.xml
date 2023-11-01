@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.bazar.ui.activities.inicioActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="227dp"
+        android:layout_height="322dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txt_inicio_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="22dp"
+        android:fontFamily="@font/simplycharming"
+        android:gravity="center_horizontal"
+        android:text="@string/inicio_titulo"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/inicio_cargar_producto"
+        android:layout_width="159dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="60dp"
+        android:textSize="11dp"
+        android:fontFamily="@font/simplycharming"
+        android:background="@drawable/boton_redondo1"
+        android:onClick="lanzarCargarProductos"
+        android:text="@string/inicio_boton_login"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/inicio_ver_producto"
+        android:layout_width="159dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/simplycharming"
+        android:textSize="11dp"
+        android:onClick="lanzarVerDatosProductos"
+        android:text="@string/inicio_boton_crearcuenta"
+        android:background="@drawable/borde_redondo"/>
+
+</LinearLayout>

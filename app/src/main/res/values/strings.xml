@@ -1,0 +1,7 @@
+<resources>
+
+
+    <!-- Inicio -->
+    <string name="inicio_boton_login"> Log in </string>
+    <string name="inicio_boton_crearcuenta"> Sing Up </string>
+    <string name="inicio_titulo"> WELCOME TO BAZAR </string></resources>
