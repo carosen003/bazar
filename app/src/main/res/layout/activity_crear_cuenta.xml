@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        tools:context="com.example.bazar.ui.activities.CrearCuentaActivity">
+
+        <TextView
+            android:id="@+id/crear_cuenta_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:paddingTop="15dp"
+            android:text="@string/crear_cuenta_titulo"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/crear_cuenta_nombreapellido"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/crear_cuenta_titulo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/borde_redondo"
+            android:ems="12"
+            android:textSize="20dp"
+            android:hint="@string/crear_cuenta_nombre_completo" />
+
+        <EditText
+            android:id="@+id/crear_cuenta_telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/crear_cuenta_nombreapellido"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/borde_redondo"
+            android:ems="12"
+            android:textSize="20dp"
+            android:hint="@string/crear_cuenta_telefono" />
+
+        <EditText
+            android:id="@+id/crear_cuenta_email"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/crear_cuenta_telefono"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/borde_redondo"
+            android:ems="12"
+            android:textSize="20dp"
+            android:hint="@string/crear_cuenta_email" />
+
+        <EditText
+            android:id="@+id/crear_cuenta_password"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/crear_cuenta_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/borde_redondo"
+            android:ems="12"
+            android:textSize="20dp"
+            android:hint="@string/crear_cuenta_password"
+            android:inputType="textPassword" />
+
+
+        <Button
+            android:id="@+id/crear_cuenta_btn_registrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/crear_cuenta_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/boton_redondo1"
+            android:onClick="crearCuenta"
+            android:text="@string/crear_cuenta_boton_crear"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

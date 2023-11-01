@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:textSize="22dp"
+        android:textSize="30dp"
         android:fontFamily="@font/simplycharming"
         android:gravity="center_horizontal"
         android:text="@string/inicio_titulo"
@@ -29,24 +29,24 @@
 
     <Button
         android:id="@+id/inicio_cargar_producto"
-        android:layout_width="159dp"
-        android:layout_height="27dp"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:layout_marginTop="60dp"
         android:textSize="11dp"
         android:fontFamily="@font/simplycharming"
         android:background="@drawable/boton_redondo1"
-        android:onClick="lanzarCargarProductos"
+        android:onClick=""
         android:text="@string/inicio_boton_login"
         android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/inicio_ver_producto"
-        android:layout_width="159dp"
-        android:layout_height="27dp"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:layout_marginTop="45dp"
         android:fontFamily="@font/simplycharming"
         android:textSize="11dp"
-        android:onClick="lanzarVerDatosProductos"
+        android:onClick="lanzarCrearCuenta"
         android:text="@string/inicio_boton_crearcuenta"
         android:background="@drawable/borde_redondo"/>
 
