@@ -11,4 +11,6 @@ public class inicioActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activty_inicio);
     }
+
+    ///////prueba
 }
