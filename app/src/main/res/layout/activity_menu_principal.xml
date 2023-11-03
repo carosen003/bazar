@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".ui.activities.MenuPrincipalActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="144dp"
+        android:layout_height="182dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="110dp"
+        android:src="@drawable/logoo" />
+
+    <TextView
+        android:id="@+id/txt_inicio_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="185dp"
+        android:fontFamily="@font/simplycharming"
+        android:gravity="center_horizontal"
+        android:text="@string/menu_titulo"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#03A9F4"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="240dp"
+        android:layout_height="115dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/borde_redondo"
+        android:onClick=""
+        android:text="@string/menu_boton_comprar"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="240dp"
+        android:layout_height="115dp"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/borde_redondo"
+        android:onClick="lanzarCreacionProducto"
+        android:text="@string/menu_boton_vender"
+        android:textSize="30dp" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/borde_redondo"
+        android:onClick=""
+        android:text="@string/menu_boton_acercaDe" />
+
+
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginLeft="200dp"
+        android:onClick="lanzarVerMisProdcutos"
+        android:background="@drawable/borde_redondo"
+        app:srcCompat="@drawable/carrito_nuevo" />
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+

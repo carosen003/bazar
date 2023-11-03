@@ -35,7 +35,7 @@
         android:textSize="11dp"
         android:fontFamily="@font/simplycharming"
         android:background="@drawable/boton_redondo1"
-        android:onClick=""
+        android:onClick="lanzarLogin"
         android:text="@string/inicio_boton_login"
         android:textColor="#FFFFFF" />
 

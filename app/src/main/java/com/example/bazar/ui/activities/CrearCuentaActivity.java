@@ -8,6 +8,7 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.bazar.R;
+import com.example.bazar.ui.datos.Usuario;
 
 public class CrearCuentaActivity extends AppCompatActivity {
 
@@ -32,7 +33,7 @@ public class CrearCuentaActivity extends AppCompatActivity {
         String email = campoEmail.getText().toString();
         String password = campoPassword.getText().toString();
 
-        Usuario usuario = new Usuario( nickname, nombreApellido, email, password, telefono);
+        Usuario usuario = new Usuario(  nombreApellido, email, password, telefono);
         Usuario.agregarUsuario(usuario);
 
         Intent intentLanzarLogin = new Intent( this, LoginActivity.class ) ;

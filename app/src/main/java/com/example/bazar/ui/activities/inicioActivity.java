@@ -17,4 +17,11 @@ public class inicioActivity extends Activity {
     public void lanzarCrearCuenta(View view) {
         Intent intentCrearCuenta = new Intent( this, CrearCuentaActivity.class );
         startActivity( intentCrearCuenta );
-    }}
+    }
+    public void lanzarLogin(View view) {
+        Intent intentLogin = new Intent( this, LoginActivity.class );
+        startActivity( intentLogin );
+    }
+
+
+}

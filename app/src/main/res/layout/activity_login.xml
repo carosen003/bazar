@@ -2,5 +2,59 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linearLayout1"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context="com.example.bazar.ui.activities.LoginActivity">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/simplycharming"
+            android:gravity="center_horizontal"
+            android:text="@string/texto_login"
+            android:textSize="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <EditText
+            android:id="@+id/email_login"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="150dp"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:hint="@string/prompt_email_login"
+            android:background="@drawable/borde_redondo"/>
+        <EditText
+            android:id="@+id/contrasenia_login"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="45dp"
+            android:textSize="20dp"
+            android:inputType="textPassword"
+            android:hint="@string/prompt_contrasenia_login"
+            android:background="@drawable/borde_redondo"/>
+
+
+
+        <Button
+            android:id="@+id/inicio_cargar_producto"
+            android:layout_width="165dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="190dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/simplycharming"
+            android:background="@drawable/boton_redondo1"
+            android:onClick="iniciarSesion"
+            android:text="@string/inicio_boton_login"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

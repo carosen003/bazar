@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        tools:context=".ui.activities.VenderActivity">
+        <TextView
+            android:id="@+id/vender_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/simplycharming"
+            android:paddingTop="15dp"
+            android:text="@string/vender_titulo"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/icono"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_below="@+id/vender_titulo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/icono_ropa" />
+
+        <EditText
+            android:id="@+id/vender_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/icono"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/borde_redondo"
+            android:ems="12"
+            android:hint="@string/vender_nombre"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/vender_marca"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/vender_nombre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/borde_redondo"
+            android:ems="12"
+            android:hint="@string/vender_marca"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/vender_categoria"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/vender_marca"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/borde_redondo"
+            android:ems="12"
+            android:hint="@string/vender_categoria"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/vender_precio"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/vender_categoria"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/borde_redondo"
+            android:ems="12"
+            android:hint="@string/vender_precio"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/crear_cuenta_btn_registrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vender_precio"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="@string/vender_boton"
+            android:textSize="20dp"
+            android:onClick="crearProducto"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

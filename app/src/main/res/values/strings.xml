@@ -12,5 +12,29 @@
     <string name="crear_cuenta_email">  Email</string>
     <string name="crear_cuenta_password">  Password</string>
     <string name="crear_cuenta_boton_crear">Sing Up</string>
+    <!-- Menu Principal -->
+    <string name="menu_titulo">¿Que quieres hacer hoy?</string>
+    <string name="menu_boton_comprar">Comprar</string>
+    <string name="menu_boton_vender">Vender</string>
+    <string name="menu_boton_acercaDe">  Acerca De</string>
+    <!--Login -->
+    <string name="texto_login"> SIGN IN </string>
+    <string name="prompt_email_login"> Email </string>
+    <string name="prompt_contrasenia_login"> Contraseña </string>
+    <!-- Vender un producto -->
+    <string name="vender_titulo">Vender Producto</string>
+    <string name="vender_nombre">  Titulo de la prenda</string>
+    <string name="vender_marca">  Marca</string>
+    <string name="vender_categoria">  Categoria</string>
+    <string name="vender_precio">  Precio</string>
+    <string name="vender_boton">  Vender</string>
+    <!-- Ver mis producto s-->
+    <string name="ver_misp_titulo">Datos del Producto</string>
+    <string name="etiqueta_nombre_producto">Nombre:</string>
+    <string name="etiqueta_categoria_producto">Categoria:</string>
+    <string name="etiqueta_marca_producto">Marca:</string>
+    <string name="etiqueta_precio_producto">Precio:</string>
+
+
 
 </resources>
