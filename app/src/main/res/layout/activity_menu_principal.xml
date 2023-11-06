@@ -37,7 +37,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="260dp"
         android:background="@drawable/borde_redondo"
-        android:onClick=""
+        android:onClick="lanzarAcercaDe"
         android:text="@string/menu_boton_comprar"
         android:textSize="30dp" />
 
@@ -59,12 +59,12 @@
         android:layout_marginTop="570dp"
         android:layout_marginLeft="60dp"
         android:background="@drawable/borde_redondo"
-        android:onClick=""
+        android:onClick="lanzarVerMisProdcutos"
         android:text="@string/menu_boton_acercaDe" />
 
 
 
-    <ImageButton
+    <Button
         android:id="@+id/imageButton3"
         android:layout_width="120dp"
         android:layout_height="75dp"
@@ -72,7 +72,7 @@
         android:layout_marginLeft="200dp"
         android:onClick="lanzarVerMisProdcutos"
         android:background="@drawable/borde_redondo"
-        app:srcCompat="@drawable/carrito_nuevo" />
+        android:text="Mis Productos"/>
 
 
 </RelativeLayout>

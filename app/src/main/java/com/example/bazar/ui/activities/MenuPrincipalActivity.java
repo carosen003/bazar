@@ -21,19 +21,23 @@ public class MenuPrincipalActivity extends AppCompatActivity {
         Intent intentCreacionGrupo = new Intent( this, VenderActivity.class);
         startActivity( intentCreacionGrupo );
     }
+    public void lanzarAcercaDe(View view) {
+        Intent intentAcercaDe = new Intent( this, AcercaDeActivity.class);
+        startActivity( intentAcercaDe );
+    }
 
     public void lanzarVerMisProdcutos(View view) {
         final EditText entrada = new EditText(this);
         entrada.setText("0");
         new AlertDialog.Builder(this)
-                .setTitle("Selección de grupo")
+                .setTitle("Selección de producto")
                 .setMessage("Indica su id:")
                 .setView(entrada)
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int whichButton) {
                         int id = Integer.parseInt(entrada.getText().toString());
                         Intent i = new Intent(MenuPrincipalActivity.this, verMisProductos.class);
-                        i.putExtra("idGrupo", id);
+                        i.putExtra("idProducto", id);
                         startActivity(i);
                     }})
                 .setNegativeButton("Cancelar", null)

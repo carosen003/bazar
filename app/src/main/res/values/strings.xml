@@ -1,5 +1,5 @@
 <resources>
-
+<string name="app_name">Bazar</string>
 
     <!-- Inicio -->
     <string name="inicio_boton_login"> Log in </string>
@@ -34,7 +34,10 @@
     <string name="etiqueta_categoria_producto">Categoria:</string>
     <string name="etiqueta_marca_producto">Marca:</string>
     <string name="etiqueta_precio_producto">Precio:</string>
-
+    <!-- Ver mis producto menu-->
+    <string name="item_Compartir"> Compartir </string>
+    <string name="item_limpiar"> Limpiar </string>
+    <string name="item_siguiente"> Siguiente </string>
 
 
 </resources>

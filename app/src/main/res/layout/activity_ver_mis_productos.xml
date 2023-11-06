@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollView1"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
@@ -39,7 +40,7 @@
                 android:textSize="20sp"
                 android:text="@string/etiqueta_nombre_producto" />
             <TextView
-                android:id="@+id/id_nombre_grupo_valor"
+                android:id="@+id/id_nombre_producto_valor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
@@ -60,14 +61,14 @@
                 android:layout_height="40dp"
                 android:src="@android:drawable/ic_menu_compass" />
             <TextView
-                android:id="@+id/id_objetivo_grupo_etiqueta"
+                android:id="@+id/id_objetivo_producto_etiqueta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:textSize="20sp"
                 android:text="@string/etiqueta_categoria_producto" />
             <TextView
-                android:id="@+id/id_categoria_grupo_valor"
+                android:id="@+id/id_categoria_producto_valor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
@@ -95,7 +96,7 @@
                 android:textSize="20sp"
                 android:text="@string/etiqueta_marca_producto" />
             <TextView
-                android:id="@+id/id_marca_grupo_valor"
+                android:id="@+id/id_marca_producto_valor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
@@ -113,7 +114,8 @@
                 android:id="@+id/nombre_ape_contacto_imagen"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@android:drawable/ic_menu_compass" />
+                android:src="@android:drawable/ic_menu_compass"
+                tools:ignore="DuplicateIds" />
             <TextView
                 android:id="@+id/id_precio_grupo_etiqueta"
                 android:layout_width="wrap_content"
@@ -122,7 +124,7 @@
                 android:textSize="20sp"
                 android:text="@string/etiqueta_precio_producto" />
             <TextView
-                android:id="@+id/id_precio_grupo_valor"
+                android:id="@+id/id_precio_producto_valor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"

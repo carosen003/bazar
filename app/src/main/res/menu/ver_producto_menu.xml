@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/editar_producto"
+        android:title="Editar"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/eliminar_producto"
+        android:title="Eliminar"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/siguiente_producto"
+        android:title="Siguiente"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/item_compartir"
+        android:title="@string/item_Compartir"
+        android:icon="@android:drawable/ic_menu_share"
+        android:orderInCategory="10"
+        app:showAsAction="always" />
+
+
+</menu>
