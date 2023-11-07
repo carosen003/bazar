@@ -11,13 +11,15 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.bazar.R;
 import com.example.bazar.ui.datos.Producto;
 
 import com.example.bazar.ui.utils.LogUtils;
 import com.example.bazar.ui.utils.RequestCode;
 
-public class verMisProductos extends Activity {
+public class verMisProductos extends AppCompatActivity {
     private int idProducto = 0;
     private Producto unProducto;
     private TextView nombre;

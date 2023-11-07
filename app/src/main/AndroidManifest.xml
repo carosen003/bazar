@@ -9,11 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light">
-        <activity
-            android:name=".ui.activities.VisorImagen"
-            android:exported="false"
-            android:label="@string/title_activity_visor_imagen"
-            android:theme="@style/Theme.AppCompat.Light" />
+
         <activity
             android:name=".ui.activities.inicioActivity"
             android:exported="true">
