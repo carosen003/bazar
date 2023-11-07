@@ -1,5 +1,5 @@
 <resources>
-<string name="app_name">Bazar</string>
+    <string name="app_name">Bazar</string>
 
     <!-- Inicio -->
     <string name="inicio_boton_login"> Log in </string>
@@ -38,6 +38,7 @@
     <string name="item_Compartir"> Compartir </string>
     <string name="item_limpiar"> Limpiar </string>
     <string name="item_siguiente"> Siguiente </string>
+    <string name="title_activity_visor_imagen">VisorImagen</string>
 
 
 </resources>

@@ -6,6 +6,7 @@ import android.widget.ListView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.bazar.R;
+import com.example.bazar.ui.adaptadores.CategoriaAdaptador;
 
 public class CategoriaListView extends AppCompatActivity {
     ListView lista ;
@@ -20,7 +21,8 @@ public class CategoriaListView extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_view_comprar);
-        lista = (ListView) findViewById(R.id.lv_comprar);
+        lista = (ListView) findViewById(R.id.lv_lista);
+        lista.setAdapter(new CategoriaAdaptador(this, datos, datosImg));
     }
 
 
