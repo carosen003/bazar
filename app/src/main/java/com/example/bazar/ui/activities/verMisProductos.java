@@ -12,12 +12,27 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import com.example.bazar.R;
 import com.example.bazar.ui.datos.Producto;
 
 import com.example.bazar.ui.utils.LogUtils;
 import com.example.bazar.ui.utils.RequestCode;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.example.bazar.R;
+import com.example.bazar.ui.adaptadores.SlidePagerAdaptor;
+import com.example.bazar.ui.fragments.PageFragment1;
+import com.example.bazar.ui.fragments.PageFragment2;
+import com.example.bazar.ui.fragments.PageFragment3;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class verMisProductos extends AppCompatActivity {
     private int idProducto = 0;
@@ -26,6 +41,8 @@ public class verMisProductos extends AppCompatActivity {
     private TextView categoria;
     private TextView marca;
     private TextView precio;
+    private ViewPager pager;
+    private PagerAdapter pagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +56,23 @@ public class verMisProductos extends AppCompatActivity {
         }
 
         actualizarVista();
+        ///////////////////////////////////////////////
+        Log.d(LogUtils.tag, "Inicia metodo en Carrrusel de imagenes .onCreate");
+
+        List<Fragment> list = new ArrayList<>();
+        list.add(new PageFragment1());
+        list.add(new PageFragment2());
+        list.add(new PageFragment3());
+
+
+        pager = findViewById(R.id.pager);
+        pagerAdapter = new SlidePagerAdaptor(getSupportFragmentManager(), list);
+
+        //pagerAdapter.getClass();
+        // pagerAdapter.setAdapter(pagerAdapter);
+        pager.setAdapter(pagerAdapter);
     }
+
     public void actualizarVista() {
         if (idProducto < 0 || idProducto > (Producto.productos.size() - 1)) {
             desplegarMensajeNoExisteProducto();
@@ -135,6 +168,8 @@ public class verMisProductos extends AppCompatActivity {
         Toast toast = Toast.makeText(this, "El producto no existe", Toast.LENGTH_SHORT);
         toast.show();
     }
+
+
 
 
 }

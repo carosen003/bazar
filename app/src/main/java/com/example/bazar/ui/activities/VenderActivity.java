@@ -2,9 +2,10 @@ package com.example.bazar.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,6 +18,9 @@ public class VenderActivity extends AppCompatActivity {
     private EditText campoCategoria;
     private EditText campoMarca;
     private EditText campoPrecio;
+    private int idProducto = -1;
+    private boolean modoEdicion = false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,20 +35,80 @@ public class VenderActivity extends AppCompatActivity {
 
     }
 
-    public void crearProducto(View view) {
+    public void crearProducto() {
 
 
-        Producto producto = new Producto(campoNombre.getText().toString(),
-                campoCategoria.getText().toString(), campoMarca.getText().toString(), campoPrecio.getText().toString(), Usuario.getUsuarioLogueado());
-        Producto.agregarProducto(producto);
-        String TAG = null;
-        Log.i(TAG, "Se creó el producto ");
-        Intent intent = new Intent();
-        intent.putExtra("resultado", 10);
-        setResult(RESULT_OK, intent);
-        finish();
+        String nombre = campoNombre.getText().toString();
+        String categoria = campoCategoria.getText().toString();
+        String marca = campoMarca.getText().toString();
+        String precio = campoPrecio.getText().toString();
+
+
+        if (nombre.equals("") || categoria.equals("") || marca.equals("") || precio.equals("")) {
+            desplegarMensajeCamposRequeridos();
+        } else {
+            if (modoEdicion) {
+                Producto producto = Producto.productos.get(idProducto);
+                producto.setNombre(nombre);
+                producto.setCategoria(categoria);
+                producto.setMarca(marca);
+                producto.setPrecio(precio);
+
+                Intent intent = new Intent();
+                intent.putExtra("resultado", 1);
+                setResult(RESULT_OK, intent);
+                finish();
+            } else {
+                Producto producto = new Producto(nombre, categoria, marca, precio, Usuario.getUsuarioLogueado());
+                Producto.agregarProducto(producto);
+                desplegarMensajeResgistroExitoso();
+
+                Intent intent = new Intent();
+                intent.putExtra("resultado", 10);
+                setResult(RESULT_OK, intent);
+                finish();
+            }
+        }
 
     }
 
+    public void limpiarCampo() {
+        campoNombre.setText("");
+        campoCategoria.setText("");
+        campoMarca.setText("");
+        campoPrecio.setText("");
+
+    }
+
+
+    public void desplegarMensajeCamposRequeridos() {
+        Toast toast = Toast.makeText(this, "Todos los campos son requeridos", Toast.LENGTH_SHORT);
+        toast.show();
+    }
+
+    public void desplegarMensajeResgistroExitoso() {
+        Toast toast = Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT);
+        toast.show();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.crear_producto_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.guardar_producto:
+                crearProducto();
+                break;
+            case R.id.limpiar_producto:
+                limpiarCampo();
+                finish();
+        }
+        return true;
+
+    }
 
 }

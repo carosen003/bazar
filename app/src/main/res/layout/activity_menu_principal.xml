@@ -59,7 +59,7 @@
         android:layout_marginTop="570dp"
         android:layout_marginLeft="60dp"
         android:background="@drawable/borde_redondo"
-        android:onClick="lanzarVerMisProdcutos"
+        android:onClick="lanzarAcercaDe"
         android:text="@string/menu_boton_acercaDe" />
 
 

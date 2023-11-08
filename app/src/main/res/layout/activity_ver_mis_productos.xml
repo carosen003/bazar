@@ -84,7 +84,7 @@
             android:layout_marginTop="20dp">
 
             <ImageView
-                android:id="@+id/nombre_ape_contacto_imagen"
+                android:id="@+id/nombre_ape_contacto_imagen1"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@android:drawable/ic_menu_compass" />
@@ -133,6 +133,12 @@
                 />
         </LinearLayout>
 
-
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </LinearLayout>
+
+
+
 </ScrollView>
