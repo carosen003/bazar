@@ -80,4 +80,9 @@ public class Producto {
         this.creador = creador;
     }
 
+    @Override
+    public String toString() {
+        return String.format("Producto {nombre: %s}", nombre);
+    }
+
 }

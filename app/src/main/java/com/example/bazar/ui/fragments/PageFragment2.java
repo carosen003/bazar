@@ -17,15 +17,10 @@ public class PageFragment2 extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        ViewGroup rootView = (ViewGroup)inflater
-                .inflate(R.layout.page2,container,false);
+        ViewGroup rootView = (ViewGroup) inflater
+                .inflate(R.layout.page2, container, false);
 
 
-
-
-
-
-        
         return rootView;
     }
 }

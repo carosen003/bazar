@@ -25,6 +25,10 @@
         <activity android:name=".ui.activities.VenderActivity" />
         <activity android:name=".ui.activities.verMisProductos" />
         <activity android:name=".ui.activities.AcercaDeActivity" />
+        <activity android:name=".ui.activities.SplashScreenActivity"/>
+        <activity android:name=".ui.activities.ProductosListView"/>
+
+
     </application>
 
 </manifest>

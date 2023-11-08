@@ -37,7 +37,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="260dp"
         android:background="@drawable/borde_redondo"
-        android:onClick="lanzarAcercaDe"
+        android:onClick="lanzarComprar"
         android:text="@string/menu_boton_comprar"
         android:textSize="30dp" />
 

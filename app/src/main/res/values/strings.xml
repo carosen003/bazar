@@ -13,7 +13,7 @@
     <string name="crear_cuenta_password">  Password</string>
     <string name="crear_cuenta_boton_crear">Sing Up</string>
     <!-- Menu Principal -->
-    <string name="menu_titulo">¿Que quieres hacer hoy?</string>
+    <string name="menu_titulo">¿Qué quieres hacer hoy?</string>
     <string name="menu_boton_comprar">Comprar</string>
     <string name="menu_boton_vender">Vender</string>
     <string name="menu_boton_acercaDe">  Acerca De</string>

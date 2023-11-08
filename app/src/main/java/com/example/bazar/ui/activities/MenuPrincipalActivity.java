@@ -25,6 +25,10 @@ public class MenuPrincipalActivity extends AppCompatActivity {
         Intent intentAcercaDe = new Intent( this, AcercaDeActivity.class);
         startActivity( intentAcercaDe );
     }
+    public void lanzarComprar(View view) {
+        Intent intentComprar = new Intent( this, ProductosListView.class);
+        startActivity( intentComprar );
+    }
 
     public void lanzarVerMisProdcutos(View view) {
         final EditText entrada = new EditText(this);

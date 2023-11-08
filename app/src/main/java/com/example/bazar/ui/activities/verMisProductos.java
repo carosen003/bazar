@@ -1,8 +1,7 @@
 package com.example.bazar.ui.activities;
 
 
-import android.annotation.SuppressLint;
-import android.app.Activity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,14 +24,11 @@ import com.example.bazar.ui.utils.RequestCode;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.bazar.R;
 import com.example.bazar.ui.adaptadores.SlidePagerAdaptor;
 import com.example.bazar.ui.fragments.PageFragment1;
 import com.example.bazar.ui.fragments.PageFragment2;
 import com.example.bazar.ui.fragments.PageFragment3;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class verMisProductos extends AppCompatActivity {
     private int idProducto = 0;
@@ -57,7 +53,6 @@ public class verMisProductos extends AppCompatActivity {
 
         actualizarVista();
         ///////////////////////////////////////////////
-        Log.d(LogUtils.tag, "Inicia metodo en Carrrusel de imagenes .onCreate");
 
         List<Fragment> list = new ArrayList<>();
         list.add(new PageFragment1());
@@ -71,6 +66,8 @@ public class verMisProductos extends AppCompatActivity {
         //pagerAdapter.getClass();
         // pagerAdapter.setAdapter(pagerAdapter);
         pager.setAdapter(pagerAdapter);
+        Log.d(LogUtils.tag, "Inicia metodo en Carrrusel de imagenes .onCreate");
+
     }
 
     public void actualizarVista() {
@@ -129,13 +126,16 @@ public class verMisProductos extends AppCompatActivity {
             case R.id.siguiente_producto:
                 siguienteProducto();
                 break;
-        }
+            case R.id.ir_menuprincipal:
+                Intent intentMenuPrincipal = new Intent( this, MenuPrincipalActivity.class );
+                startActivity( intentMenuPrincipal );        }
         return true;
     }
 
     private void lanzarActividadEdicionProducto() {
         Intent i = new Intent(this, VenderActivity.class);
         i.putExtra("idProducto", idProducto);
+        Log.d(LogUtils.tag, "En editar : " + idProducto);
         startActivityForResult(i, RequestCode.PETICION_EDITAR_PRODUCTO.getCodigo());
     }
 

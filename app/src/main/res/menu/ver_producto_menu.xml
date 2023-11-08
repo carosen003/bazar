@@ -14,6 +14,11 @@
         app:showAsAction="never"
         />
     <item
+        android:id="@+id/ir_menuprincipal"
+        android:title="Menu Principal"
+        app:showAsAction="always"
+        />
+    <item
         android:id="@+id/siguiente_producto"
         android:title="Siguiente"
         app:showAsAction="always"

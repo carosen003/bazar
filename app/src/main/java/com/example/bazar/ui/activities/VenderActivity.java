@@ -32,6 +32,18 @@ public class VenderActivity extends AppCompatActivity {
         campoMarca = (EditText) findViewById(R.id.vender_marca);
         campoPrecio = (EditText) findViewById(R.id.vender_precio);
 
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            idProducto = extras.getInt("idProducto", -1);
+            if (idProducto != -1) {
+                modoEdicion = true;
+                campoNombre.setText(Producto.productos.get(idProducto).getNombre());
+                campoCategoria.setText(Producto.productos.get(idProducto).getCategoria());
+                campoMarca.setText(Producto.productos.get(idProducto).getMarca());
+                campoPrecio.setText(Producto.productos.get(idProducto).getPrecio());
+            }
+        }
+
 
     }
 
