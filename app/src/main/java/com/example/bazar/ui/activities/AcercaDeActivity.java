@@ -20,7 +20,7 @@ public class AcercaDeActivity extends AppCompatActivity {
     private ViewPager pager;
     private PagerAdapter pagerAdapter;
 
-    /*@Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acerca_de);
@@ -40,5 +40,5 @@ public class AcercaDeActivity extends AppCompatActivity {
         pager.setAdapter(pagerAdapter);
 
 
-    }*/
+    }
 }

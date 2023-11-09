@@ -18,11 +18,11 @@ public class Producto {
 
     static {
         Usuario unsuario = new Usuario("Carlos ", "carosen@gmail.com", "0000", "0971258963");
-        productos.add(new Producto("Zapato negro", "Nike", "Calzado", "100", unsuario));
-        productos.add(new Producto("Camisa Polo azul", "Ralph Lauren", "Ropa", "120", unsuario));
-        productos.add(new Producto("Collar de perlas", "Dior", "Accesrios", "500", unsuario));
-        productos.add(new Producto("Gorro gris", "Adidas", "Accesorios", "80", unsuario));
-        productos.add(new Producto("Pulsera con brillo", "Swasrozki", "Acesorio", "250", unsuario));
+        productos.add(new Producto("Zapato negro", "Nike", "Calzado", "Gs 100.000", unsuario));
+        productos.add(new Producto("Camisa Polo azul", "Ralph Lauren", "Ropa", "Gs 120.000", unsuario));
+        productos.add(new Producto("Collar de perlas", "Dior", "Accesrios", "Gs 500.000", unsuario));
+        productos.add(new Producto("Gorro gris", "Adidas", "Accesorios", "Gs 80.000", unsuario));
+        productos.add(new Producto("Pulsera con brillo", "Swasrozki", "Acesorio", "Gs 250.000", unsuario));
 
 
     }

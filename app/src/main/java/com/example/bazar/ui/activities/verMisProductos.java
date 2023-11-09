@@ -1,7 +1,6 @@
 package com.example.bazar.ui.activities;
 
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -40,6 +39,7 @@ public class verMisProductos extends AppCompatActivity {
     private ViewPager pager;
     private PagerAdapter pagerAdapter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.d(LogUtils.tag, "Inicia metodo en VerDatosProductoActivity.onCreate");
@@ -50,23 +50,9 @@ public class verMisProductos extends AppCompatActivity {
             idProducto = extras.getInt("idProducto", -1);
             Log.d(LogUtils.tag, "Id recibido del producto: " + idProducto);
         }
-
         actualizarVista();
-        ///////////////////////////////////////////////
-
-        List<Fragment> list = new ArrayList<>();
-        list.add(new PageFragment1());
-        list.add(new PageFragment2());
-        list.add(new PageFragment3());
 
 
-        pager = findViewById(R.id.pager);
-        pagerAdapter = new SlidePagerAdaptor(getSupportFragmentManager(), list);
-
-        //pagerAdapter.getClass();
-        // pagerAdapter.setAdapter(pagerAdapter);
-        pager.setAdapter(pagerAdapter);
-        Log.d(LogUtils.tag, "Inicia metodo en Carrrusel de imagenes .onCreate");
 
     }
 
@@ -90,6 +76,14 @@ public class verMisProductos extends AppCompatActivity {
 
         marca = (TextView) findViewById(R.id.id_marca_producto_valor);
         marca.setText(unProducto.getMarca());
+
+        List<Fragment> list = new ArrayList<>();
+
+        pager = findViewById(R.id.pager);
+        pagerAdapter = new SlidePagerAdaptor(getSupportFragmentManager(), list);
+
+
+
     }
 
 
@@ -127,8 +121,9 @@ public class verMisProductos extends AppCompatActivity {
                 siguienteProducto();
                 break;
             case R.id.ir_menuprincipal:
-                Intent intentMenuPrincipal = new Intent( this, MenuPrincipalActivity.class );
-                startActivity( intentMenuPrincipal );        }
+                Intent intentMenuPrincipal = new Intent(this, MenuPrincipalActivity.class);
+                startActivity(intentMenuPrincipal);
+        }
         return true;
     }
 

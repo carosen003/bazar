@@ -31,13 +31,15 @@
                 android:id="@+id/tipo_tarjeta_imagen"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@android:drawable/star_big_on" />
+                android:src="@drawable/icons8_capa_100" />
             <TextView
                 android:id="@+id/id_nombre_producto_etiqueta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
                 android:text="@string/etiqueta_nombre_producto" />
             <TextView
                 android:id="@+id/id_nombre_producto_valor"
@@ -59,13 +61,15 @@
                 android:id="@+id/nombre_ape_contacto_imagen"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@android:drawable/ic_menu_compass" />
+                android:src="@drawable/icons8_categor_a_100" />
             <TextView
                 android:id="@+id/id_objetivo_producto_etiqueta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
                 android:text="@string/etiqueta_categoria_producto" />
             <TextView
                 android:id="@+id/id_categoria_producto_valor"
@@ -87,13 +91,15 @@
                 android:id="@+id/nombre_ape_contacto_imagen1"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@android:drawable/ic_menu_compass" />
+                android:src="@drawable/icons8_camiseta_baloncesto_100" />
             <TextView
                 android:id="@+id/id_marca_grupo_etiqueta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
                 android:text="@string/etiqueta_marca_producto" />
             <TextView
                 android:id="@+id/id_marca_producto_valor"
@@ -114,7 +120,7 @@
                 android:id="@+id/nombre_ape_contacto_imagen"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@android:drawable/ic_menu_compass"
+                android:src="@drawable/icons8_precio_100"
                 tools:ignore="DuplicateIds" />
             <TextView
                 android:id="@+id/id_precio_grupo_etiqueta"
@@ -122,6 +128,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
                 android:text="@string/etiqueta_precio_producto" />
             <TextView
                 android:id="@+id/id_precio_producto_valor"
@@ -133,11 +141,14 @@
                 />
         </LinearLayout>
 
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/pager"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_weight="1" />
+<ImageView
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="30dp"
+    android:src="@drawable/foto_datos">
+
+</ImageView>
     </LinearLayout>
 
 

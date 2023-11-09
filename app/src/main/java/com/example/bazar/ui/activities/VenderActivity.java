@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -47,7 +48,7 @@ public class VenderActivity extends AppCompatActivity {
 
     }
 
-    public void crearProducto() {
+    public void crearProducto(View view) {
 
 
         String nombre = campoNombre.getText().toString();
@@ -113,7 +114,7 @@ public class VenderActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.guardar_producto:
-                crearProducto();
+                crearProducto(findViewById(R.id.guardar_producto));
                 break;
             case R.id.limpiar_producto:
                 limpiarCampo();

@@ -1,16 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:background="@drawable/marco"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        android:layout_weight="1"
-        android:layout_marginTop="350dp"
+        android:id="@+id/logo"
+        android:layout_width="270dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/acerca_de_titulo" />
 
-        app:srcCompat="@drawable/calzados" />
+    <TextView
+        android:id="@+id/txt_inicio_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/simplycharming"
+        android:gravity="center_horizontal"
+        android:text="Nuestra Historia"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#9E9E9E"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+android:text="Nuestra historia comienza con una pasión
+  compartida por la moda, la sostenibilidad
+ y el estilo atemporal. La idea surgió de un
+pequeño grupo de amigos y amantes de la
+moda que anhelaban una forma más
+personal de explorar el mundo de la
+ vestimenta. Soñábamos con un lugar donde
+ la moda vintage y las prendas previamente
+ amadas pudieran encontrar una nueva vida
+ y donde los amantes de la moda pudieran
+conectar de manera significativa.
+" />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:src="@drawable/acerca_de_logo"
+        />
+
+
 </LinearLayout>

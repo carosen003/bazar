@@ -84,14 +84,16 @@
             android:textSize="20dp" />
 
         <Button
-            android:id="@+id/crear_cuenta_btn_registrate"
+            android:id="@+id/vender_boton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/vender_precio"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="40dp"
             android:text="@string/vender_boton"
+            android:textColor="@color/white"
             android:textSize="20dp"
+            android:background="@drawable/boton_redondo1"
             android:onClick="crearProducto"/>
 
 
