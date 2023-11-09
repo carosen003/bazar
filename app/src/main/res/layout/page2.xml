@@ -31,28 +31,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:text="@string/page2"
         android:textColor="@color/black"
-        android:textSize="17dp"
-android:text="Nuestra historia comienza con una pasión
-  compartida por la moda, la sostenibilidad
- y el estilo atemporal. La idea surgió de un
-pequeño grupo de amigos y amantes de la
-moda que anhelaban una forma más
-personal de explorar el mundo de la
- vestimenta. Soñábamos con un lugar donde
- la moda vintage y las prendas previamente
- amadas pudieran encontrar una nueva vida
- y donde los amantes de la moda pudieran
-conectar de manera significativa.
-" />
+        android:textSize="19dp" />
+
     <ImageView
         android:layout_width="200dp"
         android:layout_height="160dp"
         android:src="@drawable/acerca_de_logo"
-        />
+        android:layout_marginTop="30dp"/>
 
 
 </LinearLayout>

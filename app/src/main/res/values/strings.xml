@@ -13,7 +13,7 @@
     <string name="crear_cuenta_password">  Password</string>
     <string name="crear_cuenta_boton_crear">Sing Up</string>
     <!-- Menu Principal -->
-    <string name="menu_titulo">¿Qué quieres hacer hoy?</string>
+    <string name="menu_titulo">¿Que quieres hacer hoy?</string>
     <string name="menu_boton_comprar">Comprar</string>
     <string name="menu_boton_vender">Vender</string>
     <string name="menu_boton_acercaDe">  Acerca De</string>
@@ -39,6 +39,10 @@
     <string name="item_limpiar"> Limpiar </string>
     <string name="item_siguiente"> Siguiente </string>
     <string name="title_activity_visor_imagen">VisorImagen</string>
+    <!-- Carrusel-->
+    <string name="page1"> Somos una feria virtual de la moda sustentable. Conectamos a amantes de la moda que desean compartir su estilo personal, ofreciendo prendas y accesorios y previamente amados. Nuestra plataforma te permite vender tus piezas de moda usadas y al mismo tiempo, explorar una amplia selección de artículos que reflejan el estilo de otros usuarios. Únete a nuestra comunidad y da nueva vida a la moda vintage y contemporánea con Bazar. </string>
+    <string name="page2">  Nuestra historia comienza con una pasión compartida por la moda, la sostenibilidad y el estilo atemporal. La idea surgió de un pequeño grupo de amigos y amantes de la moda que anhelaban una forma más personal de explorar el mundo de la vestimenta. Soñábamos con un lugar donde la moda vintage y las prendas previamente amadas pudieran encontrar una nueva vida y donde los amantes de la moda pudieran conectar de manera significativa.</string>
+    <string name="page3"> A lo largo de los años, hemos presenciado una notable evolución en nuestro logo, que ha reflejado tanto nuestra transformación como plataforma de moda como nuestro compromiso con la innovación. Esta evolución es un testimonio de nuestro respeto por nuestra historia y pasión por la moda sostenible, al tiempo que nos impulsa hacia un futuro emocionante donde nuestro logo sigue siendo un faro de nuestra visión y compromiso en la moda. </string>
 
 
 </resources>

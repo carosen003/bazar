@@ -31,28 +31,17 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:textColor="@color/black"
-        android:textSize="17dp"
-        android:text="A lo largo de los años, hemos presenciado
-una notable evolución en nuestro logo,
- que ha reflejado tanto nuestra transformación
-como plataforma de moda como nuestro
-compromiso con la innovación. Esta
-evolución es un testimonio de nuestro
-respeto por nuestra historia y pasión por la
- moda sostenible, al tiempo que nos impulsa
- hacia un futuro emocionante donde nuestro
-logo sigue siendo un faro de nuestra visión y
-compromiso en la moda.
-
-" />
+        android:textSize="19dp"
+        android:gravity="center"
+        android:text="@string/page3" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="40dp"
         android:layout_marginLeft="15dp"
         android:orientation="horizontal">
 
@@ -66,7 +55,7 @@ compromiso en la moda.
             android:layout_width="140dp"
             android:layout_height="180dp"
             android:src="@drawable/logoo"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="50dp"
             android:layout_marginBottom="100dp"
             />
     </LinearLayout>

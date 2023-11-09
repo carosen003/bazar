@@ -103,6 +103,10 @@ public class VenderActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT);
         toast.show();
     }
+    public void desplegarMensajeHome() {
+        Toast toast = Toast.makeText(this, "Ir al menu principal", Toast.LENGTH_SHORT);
+        toast.show();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -119,6 +123,10 @@ public class VenderActivity extends AppCompatActivity {
             case R.id.limpiar_producto:
                 limpiarCampo();
                 finish();
+            case R.id.ir_menuprincipal:
+                Intent intentMenuPrincipal = new Intent(this, MenuPrincipalActivity.class);
+                startActivity(intentMenuPrincipal);
+                desplegarMensajeHome();
         }
         return true;
 

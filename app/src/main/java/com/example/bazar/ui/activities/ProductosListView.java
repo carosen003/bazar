@@ -4,11 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,7 +19,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.bazar.R;
 import com.example.bazar.ui.adaptadores.ProductoAdaptador;
 import com.example.bazar.ui.datos.Producto;
-
 
 
 public class ProductosListView extends AppCompatActivity {
@@ -44,11 +46,28 @@ public class ProductosListView extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.ir_menuprincipal, menu);
+        return true;
+    }
+    public void desplegarMensajeHome() {
+        Toast toast = Toast.makeText(this, "Ir al menu principal", Toast.LENGTH_SHORT);
+        toast.show();
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.ir_menuprincipal:
+                Intent intentMenuPrincipal = new Intent(this, MenuPrincipalActivity.class);
+                startActivity(intentMenuPrincipal);
+                desplegarMensajeHome();
+        }
+        return true;
+    }
 
 
 }

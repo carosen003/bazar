@@ -22,7 +22,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="0dp"
         android:fontFamily="@font/simplycharming"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:text="Bienvenidos a Bazar"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#9E9E9E"
@@ -31,28 +31,18 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:textColor="@color/black"
-        android:textSize="17dp"
-        android:text="Somos una feria virtual de la moda
- sustentable. Conectamos a amantes de la
-moda que desean compartir su estilo
- personal, ofreciendo prendas y accesorios
-y previamente amados. Nuestra plataforma te
- permite vender tus piezas de moda usadas y
- al mismo tiempo, explorar una amplia
-selección de artículos que reflejan el estilo de
- otros usuarios. Únete a nuestra comunidad y
- da nueva vida a la moda vintage
- y contemporánea con Bazar.
-"/>
+        android:gravity="center"
+        android:textSize="19dp"
+        android:text="@string/page1"/>
     <ImageView
         android:layout_width="200dp"
         android:layout_height="180dp"
         android:src="@drawable/acerca_de_logo"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="42dp"/>
 
 
 </LinearLayout>

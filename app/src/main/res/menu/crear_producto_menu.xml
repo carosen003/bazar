@@ -20,7 +20,11 @@
         android:title="Limpiar"
         app:showAsAction="never"
         />
-
+    <item
+        android:id="@+id/ir_menuprincipal"
+        android:icon="@drawable/icons8_casa_100"
+        android:title="TODO"
+        app:showAsAction="always" />
 
 
 </menu>

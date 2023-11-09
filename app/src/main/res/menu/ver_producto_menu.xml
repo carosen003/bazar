@@ -15,9 +15,9 @@
         />
     <item
         android:id="@+id/ir_menuprincipal"
-        android:title="Menu Principal"
+        android:icon="@drawable/icons8_casa_100"
         app:showAsAction="always"
-        />
+        android:title="TODO" />
     <item
         android:id="@+id/siguiente_producto"
         android:title="Siguiente"
